@@ -1,0 +1,28 @@
+﻿@model TodoTaskModel
+
+<div class="row">    
+    <div class="col-9">
+        <div class="row">
+            <div class="col-12">
+                <h3>@Model.Title - [$@Model.Cost]</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                @Model.Description
+            </div>
+        </div>        
+        <div class="row mb-3">
+            <div class="col-12">
+                @Model.Status
+            </div>
+        </div>
+        <h6>Feedback:</h6>
+        @foreach (var feedback in Model.Feedbacks)
+        {
+        <ul>
+            <li>@feedback.Comment</li>
+        </ul>
+        }
+    </div>
+</div>

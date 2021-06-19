@@ -1,0 +1,17 @@
+﻿@model List<TodoTaskModel>
+
+    <div class="row">
+        <div class="col-2 my-auto">Title</div>
+        <div class="col-2 my-auto">Status</div>
+
+
+    </div>
+    @foreach (var task in Model)
+    {
+<div class="row">
+
+    <div class="col-2 my-auto"><a asp-action="TaskDetail" asp-route-taskId="@task.Id">@task.Title</a></div>
+
+    <div class="col-2 my-auto">@task.Status</div>
+
+</div>}
