@@ -1,5 +1,8 @@
 # DotNetCore.Api.GraphQL
-**What is GraphQL**
+
+It is GraphQL endpoint with a web application which is a consumer for GraphQL endpoint.
+
+## What is GraphQL
 
 GaphQL is open source specification by Facebook to data query and manipulation for APIs.
 
